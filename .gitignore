@@ -2,6 +2,15 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+## General
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Thumbnails
+._*
+
 ## User settings
 xcuserdata/
 
@@ -21,6 +30,7 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*.xcuserstate
 
 ## Obj-C/Swift specific
 *.hmap
@@ -81,6 +91,26 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+## Xcode Patch
+
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+### AppCode
+
+.idea/*
+
+### fastlane
+
+fastlane/report.xml
+
+- .generated.swift
+*.xcuserstate
 
 # Code Injection
 #
